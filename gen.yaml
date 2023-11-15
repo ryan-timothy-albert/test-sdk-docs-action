@@ -1,7 +1,13 @@
 configVersion: 1.0.0
+management:
+  docChecksum: 21c25ca8a734b4fb704e98d966524ee0
+  docVersion: 1.0.0
+  speakeasyVersion: 1.120.2
+  generationVersion: 2.191.3
 generation:
   comments: {}
   sdkClassName: speakeasybar
+  repoURL: https://github.com/speakeasy-api/test-sdk-docs-action.git
   usageSnippets:
     optionalPropertyRendering: withExample
 features:
@@ -13,6 +19,10 @@ features:
     globalServerURLs: 0.1.0
     inputOutputModels: 0.2.0
     serverIDs: 0.1.0
+  go:
+    core: 3.1.5
+    flattening: 2.81.1
+    globalServerURLs: 2.82.0
 docs:
   version: ""
   imports:
@@ -27,7 +37,7 @@ docs:
   outputModelSuffix: output
   packageName: speakeasy-sdk-docs
 go:
-  version: 0.0.1
+  version: 0.1.0
   clientServerStatusCodesAsErrors: true
   flattenGlobalSecurity: true
   imports:
@@ -39,9 +49,11 @@ go:
       shared: models/components
       webhooks: models/webhooks
   inputModelSuffix: input
+  installationURL: https://github.com/speakeasy-api/test-sdk-docs-action
   maxMethodParams: 4
   outputModelSuffix: output
   packageName: github.com/speakeasy-sdks/template-sdk
+  repoSubDirectory: .
 python:
   version: 0.0.1
   author: Speakeasy
