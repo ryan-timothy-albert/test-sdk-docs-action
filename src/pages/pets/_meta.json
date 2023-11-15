@@ -1,0 +1,11 @@
+{
+  "create_pets": {
+    "title": "Create Pets"
+  },
+  "list_pets": {
+    "title": "List Pets"
+  },
+  "show_pet_by_id": {
+    "title": "Show Pet By Id"
+  }
+}
