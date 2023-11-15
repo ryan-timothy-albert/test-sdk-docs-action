@@ -1,0 +1,27 @@
+import CurlHeader from './_header/curl.mdx';
+import SDKHeader from './_header/sdk.mdx';
+import OperationHeader from '/src/components/OperationHeader';
+
+###### *Pets*
+
+<OperationHeader
+  sdkHeader={<SDKHeader />}
+  curlHeader={<CurlHeader />}
+/>
+
+{/* rendered from operation template */}
+
+import {LanguageOperation} from "/content/languages";
+import {LanguageSwitch} from "/content/languages";
+import GoParameters from "./_parameters/go.mdx";
+import GoResponse from "./_response/go.mdx";
+import GoUsage from "./_usage/go.mdx";
+
+export const Operation = () => {
+    const go = <LanguageOperation  parameters={<GoParameters/>} response={<GoResponse/>} usage={<GoUsage/>}/>
+    return <LanguageSwitch langToContent={{go}}/>
+}
+
+<Operation />
+
+{/* end rendered section */}
