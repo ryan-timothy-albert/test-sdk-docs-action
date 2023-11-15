@@ -1,0 +1,24 @@
+```go CreatePets.go
+package main
+
+import(
+	templatesdk "github.com/speakeasy-sdks/template-sdk"
+	"context"
+	"log"
+	"net/http"
+)
+
+func main() {
+    s := templatesdk.New()
+
+    ctx := context.Background()
+    res, err := s.Pets.CreatePets(ctx)
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    if res.StatusCode == http.StatusOK {
+        // handle response
+    }
+}
+```
