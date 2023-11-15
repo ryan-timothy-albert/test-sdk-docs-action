@@ -16,10 +16,14 @@ import {LanguageSwitch} from "/content/languages";
 import GoParameters from "./_parameters/go.mdx";
 import GoResponse from "./_response/go.mdx";
 import GoUsage from "./_usage/go.mdx";
+import TypescriptParameters from "./_parameters/typescript.mdx";
+import TypescriptResponse from "./_response/typescript.mdx";
+import TypescriptUsage from "./_usage/typescript.mdx";
 
 export const Operation = () => {
     const go = <LanguageOperation  parameters={<GoParameters/>} response={<GoResponse/>} usage={<GoUsage/>}/>
-    return <LanguageSwitch langToContent={{go}}/>
+    const typescript = <LanguageOperation  parameters={<TypescriptParameters/>} response={<TypescriptResponse/>} usage={<TypescriptUsage/>}/>
+    return <LanguageSwitch langToContent={{go, typescript}}/>
 }
 
 <Operation />
