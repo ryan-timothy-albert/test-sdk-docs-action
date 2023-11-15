@@ -14,7 +14,7 @@ features:
     core: 1.5.0
     globalServerURLs: 0.1.0
 docs:
-  version: 0.1.0
+  version: 0.2.0
   imports:
     option: openapi
     paths:
