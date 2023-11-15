@@ -19,11 +19,16 @@ import GoUsage from "./_usage/go.mdx";
 import TypescriptParameters from "./_parameters/typescript.mdx";
 import TypescriptResponse from "./_response/typescript.mdx";
 import TypescriptUsage from "./_usage/typescript.mdx";
+import CurlAuthentication from "./_authentication/curl.mdx";
+import CurlParameters from "./_parameters/curl.mdx";
+import CurlResponse from "./_response/curl.mdx";
+import CurlUsage from "./_usage/curl.mdx";
 
 export const Operation = () => {
     const go = <LanguageOperation  parameters={<GoParameters/>} response={<GoResponse/>} usage={<GoUsage/>}/>
     const typescript = <LanguageOperation  parameters={<TypescriptParameters/>} response={<TypescriptResponse/>} usage={<TypescriptUsage/>}/>
-    return <LanguageSwitch langToContent={{go, typescript}}/>
+    const curl = <LanguageOperation authentication={<CurlAuthentication/>} parameters={<CurlParameters/>} response={<CurlResponse/>} usage={<CurlUsage/>}/>
+    return <LanguageSwitch langToContent={{go, typescript, curl}}/>
 }
 
 <Operation />

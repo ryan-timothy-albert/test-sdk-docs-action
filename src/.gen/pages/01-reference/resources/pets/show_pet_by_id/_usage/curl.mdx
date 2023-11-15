@@ -1,0 +1,20 @@
+
+import WithStatusBar from '@/src/components/WithStatusBar';
+
+<WithStatusBar statusItems={[["Status", "200"], ["Content-Type", "application/json"]]}>
+  <CH.Code>
+  ```bash Example Request
+  curl http://petstore.swagger.io/v1/pets/string \
+--header 'Accept: application/json'
+  ```
+  ---
+
+  ```json Example Response
+  {
+    "id": 715190,
+    "name": "string",
+    "tag": "string"
+  }
+  ```
+  </CH.Code>
+</WithStatusBar>
