@@ -1,5 +1,4 @@
 content/pages/01-reference/installation/installation.mdx
-content/pages/01-reference/resources/pets/create_pets/_header/curl.mdx
 content/pages/01-reference/resources/pets/create_pets/_header/sdk.mdx
 content/pages/01-reference/resources/pets/create_pets/_parameters/go.mdx
 content/pages/01-reference/resources/pets/create_pets/_parameters/typescript.mdx
@@ -8,7 +7,6 @@ content/pages/01-reference/resources/pets/create_pets/_response/typescript.mdx
 content/pages/01-reference/resources/pets/create_pets/_usage/go.mdx
 content/pages/01-reference/resources/pets/create_pets/_usage/typescript.mdx
 content/pages/01-reference/resources/pets/create_pets/create_pets.mdx
-content/pages/01-reference/resources/pets/list_pets/_header/curl.mdx
 content/pages/01-reference/resources/pets/list_pets/_header/sdk.mdx
 content/pages/01-reference/resources/pets/list_pets/_parameters/go.mdx
 content/pages/01-reference/resources/pets/list_pets/_parameters/typescript.mdx
@@ -18,7 +16,6 @@ content/pages/01-reference/resources/pets/list_pets/_usage/go.mdx
 content/pages/01-reference/resources/pets/list_pets/_usage/typescript.mdx
 content/pages/01-reference/resources/pets/list_pets/list_pets.mdx
 content/pages/01-reference/resources/pets/pets.mdx
-content/pages/01-reference/resources/pets/show_pet_by_id/_header/curl.mdx
 content/pages/01-reference/resources/pets/show_pet_by_id/_header/sdk.mdx
 content/pages/01-reference/resources/pets/show_pet_by_id/_parameters/go.mdx
 content/pages/01-reference/resources/pets/show_pet_by_id/_parameters/typescript.mdx
@@ -44,12 +41,15 @@ content/types/models/operations/show_pet_by_id_response/typescript.mdx
 content/pages/01-reference/resources/pets/create_pets/_response/curl.mdx
 content/pages/01-reference/resources/pets/create_pets/_parameters/curl.mdx
 content/pages/01-reference/resources/pets/create_pets/_usage/curl.mdx
+content/pages/01-reference/resources/pets/create_pets/_header/curl.mdx
 content/pages/01-reference/resources/pets/list_pets/_response/curl.mdx
 content/pages/01-reference/resources/pets/list_pets/_parameters/curl.mdx
 content/pages/01-reference/resources/pets/list_pets/_usage/curl.mdx
+content/pages/01-reference/resources/pets/list_pets/_header/curl.mdx
 content/pages/01-reference/resources/pets/show_pet_by_id/_response/curl.mdx
 content/pages/01-reference/resources/pets/show_pet_by_id/_parameters/curl.mdx
 content/pages/01-reference/resources/pets/show_pet_by_id/_usage/curl.mdx
+content/pages/01-reference/resources/pets/show_pet_by_id/_header/curl.mdx
 content/types/operations/create_pets_response/curl.mdx
 content/types/operations/list_pets_request/curl.mdx
 content/types/operations/list_pets_response/curl.mdx
