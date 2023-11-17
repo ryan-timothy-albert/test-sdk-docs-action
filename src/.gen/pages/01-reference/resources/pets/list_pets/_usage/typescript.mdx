@@ -1,0 +1,33 @@
+
+import WithStatusBar from '@/src/components/WithStatusBar';
+
+<WithStatusBar statusItems={[["Status", "200"], ["Content-Type", "application/json"]]}>
+  <CH.Code>
+  ```typescript ListPets.ts
+  import { Speakeasybar } from "speakeasybar";
+import { ListPetsRequest } from "speakeasybar/dist/models/operations";
+
+(async() => {
+  const sdk = new Speakeasybar();
+const limit: number = 548814;
+
+  const res = await sdk.pets.listPets(limit);
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+  ```
+  ---
+
+  ```json Example Response
+  [
+    {
+      "id": 548814,
+      "name": "string",
+      "tag": "string"
+    }
+  ]
+  ```
+  </CH.Code>
+</WithStatusBar>
