@@ -1,0 +1,47 @@
+
+import WithStatusBar from '@/src/components/WithStatusBar';
+
+<WithStatusBar statusItems={[["Status", "5"], ["Content-Type", "application/json"]]}>
+  <CH.Code>
+  ```go ListIngredients.go
+  package main
+
+import(
+	"github.com/speakeasy-sdks/template-sdk/models/components"
+	templatesdk "github.com/speakeasy-sdks/template-sdk"
+	"context"
+	"log"
+)
+
+func main() {
+    s := templatesdk.New(
+        templatesdk.WithSecurity(""),
+    )
+
+
+    ingredients := []string{
+        "string",
+    }
+
+    ctx := context.Background()
+    res, err := s.Ingredients.ListIngredients(ctx, ingredients)
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    if res.Classes != nil {
+        // handle response
+    }
+}
+  ```
+  ---
+
+  ```json Example Response
+  {
+    "code": "string",
+    "details": {},
+    "message": "string"
+  }
+  ```
+  </CH.Code>
+</WithStatusBar>
