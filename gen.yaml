@@ -19,7 +19,7 @@ features:
     inputOutputModels: 0.2.0
     serverIDs: 0.1.0
 docs:
-  version: 0.6.0
+  version: 0.7.0
   imports:
     option: openapi
     paths:
