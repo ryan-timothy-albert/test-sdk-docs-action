@@ -24,7 +24,7 @@ jobs:
         - go
         - typescript
         - python
-      mode: pr
+      mode: direct
       openapi_docs: |
         - ./openapi.yaml
       speakeasy_version: latest
