@@ -1,3 +1,7 @@
+content/pages/01-reference/client_sdks/_snippets/go.mdx
+content/pages/01-reference/client_sdks/_snippets/python.mdx
+content/pages/01-reference/client_sdks/_snippets/typescript.mdx
+content/pages/01-reference/client_sdks/client_sdks.mdx
 content/pages/01-reference/installation/installation.mdx
 content/pages/01-reference/resources/authentication/authenticate/_header/sdk.mdx
 content/pages/01-reference/resources/authentication/authenticate/_parameters/go.mdx
@@ -186,7 +190,6 @@ src/components/Footer/index.tsx
 src/components/Footer/styles.module.scss
 src/components/Header/index.tsx
 src/components/Header/styles.module.scss
-src/components/LanguageSelector/data.ts
 src/components/LanguageSelector/index.tsx
 src/components/LanguageSelector/styles.module.scss
 src/components/LinkWrapper/index.tsx
@@ -202,6 +205,8 @@ src/components/NavItem/styles.module.scss
 src/components/OperationHeader/index.tsx
 src/components/Parameters/index.tsx
 src/components/Parameters/styles.module.scss
+src/components/SDKPicker/index.tsx
+src/components/SDKPicker/styles.module.scss
 src/components/Section/section.tsx
 src/components/Section/styles.module.scss
 src/components/StatusCode/index.tsx
@@ -249,6 +254,7 @@ src/icons/languages/python.tsx
 src/icons/languages/typescript.tsx
 src/icons/languages/unity.tsx
 src/lib/labels.ts
+src/lib/languageData.ts
 src/styles/background-gradients.scss
 src/styles/codehike-styles.scss
 src/styles/index.scss
@@ -269,6 +275,11 @@ src/pages/404.mdx
 src/pages/[...rest].mdx
 src/pages/index.mdx
 src/pages/_app.mdx
+src/.gen/pages/01-reference/client_sdks/_snippets/go.mdx
+src/.gen/pages/01-reference/client_sdks/_snippets/python.mdx
+src/.gen/pages/01-reference/client_sdks/_snippets/typescript.mdx
+src/.gen/pages/01-reference/client_sdks/client_sdks.mdx
+src/.gen/pages/01-reference/client_sdks/client_sdks_content.mdx
 src/.gen/pages/01-reference/installation/_snippets/go.mdx
 src/.gen/pages/01-reference/installation/_snippets/python.mdx
 src/.gen/pages/01-reference/installation/_snippets/typescript.mdx
@@ -360,6 +371,7 @@ src/.gen/pages/01-reference/resources/resources.mdx
 src/.gen/pages/01-reference/resources/resources_content.mdx
 src/.gen/pages/01-reference/reference.mdx
 src/.gen/pages/01-reference/reference_content.mdx
+src/pages/client_sdks/_meta.json
 src/pages/installation/_meta.json
 src/pages/authentication/authenticate/_meta.json
 src/pages/authentication/_meta.json
