@@ -2,8 +2,8 @@ configVersion: 1.0.0
 management:
   docChecksum: 8db86c8597b22945c2b3f77241037075
   docVersion: 1.0.0
-  speakeasyVersion: 1.124.3
-  generationVersion: 2.207.1
+  speakeasyVersion: 1.125.1
+  generationVersion: 2.210.3
 generation:
   comments: {}
   sdkClassName: speakeasybar
@@ -11,7 +11,7 @@ generation:
     optionalPropertyRendering: withExample
 features:
   docs:
-    core: 1.13.0
+    core: 1.15.1
     errors: 0.1.0
     examples: 0.1.1
     globalSecurity: 0.1.0
@@ -19,7 +19,7 @@ features:
     inputOutputModels: 0.2.0
     serverIDs: 0.1.0
 docs:
-  version: 0.13.0
+  version: 0.14.0
   imports:
     option: openapi
     paths:
