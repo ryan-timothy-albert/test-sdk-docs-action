@@ -5,28 +5,29 @@ import WithStatusBar from '@/src/components/WithStatusBar';
   <CH.Code>
   ```typescript CreateOrder.ts
   import { Speakeasybar } from "speakeasybar";
-import { CreateOrderOrderUpdateRequestBody, CreateOrderOrderUpdateResponse } from "speakeasybar/dist/models/callbacks";
-import { ErrorT, OrderInput, OrderType } from "speakeasybar/dist/models/components";
-import { CreateOrderRequest } from "speakeasybar/dist/models/operations";
+import { OrderType } from "speakeasybar/models/components";
 
 async function run() {
   const sdk = new Speakeasybar({
     apiKey: "<YOUR_API_KEY_HERE>",
   });
-const requestBody: OrderInput[] = [
-  {
-    productCode: "NAC-3F2D1",
-    quantity: 715190,
-    type: OrderType.Ingredient,
-  },
-];
-const callbackUrl: string = "string";
 
+  const requestBody = [
+    {
+      productCode: "NAC-3F2D1",
+      quantity: 715190,
+      type: OrderType.Ingredient,
+    },
+  ];
+  const callbackUrl = "string";
+  
   const res = await sdk.orders.createOrder(requestBody, callbackUrl);
 
-  if (res.statusCode == 200) {
-    // handle response
+  if (res?.statusCode !== 200) {
+    throw new Error("Unexpected status code: " + res?.statusCode || "-");
   }
+  
+  // handle response
 }
 
 run();
