@@ -1,0 +1,27 @@
+
+<CH.Code>
+```python GetDrink.py
+import speakeasybar
+from speakeasybar.models import operations
+
+s = speakeasybar.Speakeasybar(
+    api_key="<YOUR_API_KEY_HERE>",
+)
+
+
+res = s.drinks.get_drink(name='string')
+
+if res.drink is not None:
+    # handle response
+    pass
+```
+---
+
+```json Example Response
+  {
+    "code": "string",
+    "details": {},
+    "message": "string"
+  }
+```
+</CH.Code>

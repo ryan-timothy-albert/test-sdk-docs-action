@@ -1,0 +1,31 @@
+
+<CH.Code>
+```typescript Authenticate.ts
+import { Speakeasybar } from "speakeasybar";
+
+async function run() {
+  const sdk = new Speakeasybar({
+    apiKey: "<YOUR_API_KEY_HERE>",
+  });
+
+  const res = await sdk.authentication.authenticate({});
+
+  if (res?.statusCode !== 200) {
+    throw new Error("Unexpected status code: " + res?.statusCode || "-");
+  }
+  
+  // handle response
+}
+
+run();
+```
+---
+
+```json Example Response
+  {
+    "code": "string",
+    "details": {},
+    "message": "string"
+  }
+```
+</CH.Code>

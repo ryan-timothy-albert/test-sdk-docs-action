@@ -1,0 +1,29 @@
+
+<CH.Code>
+```python ListIngredients.py
+import speakeasybar
+from speakeasybar.models import operations
+
+s = speakeasybar.Speakeasybar(
+    api_key="<YOUR_API_KEY_HERE>",
+)
+
+
+res = s.ingredients.list_ingredients(ingredients=[
+    'string',
+])
+
+if res.classes is not None:
+    # handle response
+    pass
+```
+---
+
+```json Example Response
+  {
+    "code": "string",
+    "details": {},
+    "message": "string"
+  }
+```
+</CH.Code>

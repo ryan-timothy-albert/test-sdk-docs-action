@@ -1,0 +1,33 @@
+
+<CH.Code>
+```python CreateOrder.py
+import speakeasybar
+from speakeasybar.models import callbacks, components, operations
+
+s = speakeasybar.Speakeasybar(
+    api_key="<YOUR_API_KEY_HERE>",
+)
+
+
+res = s.orders.create_order(request_body=[
+    components.OrderInput(
+        product_code='NAC-3F2D1',
+        quantity=715190,
+        type=components.OrderType.INGREDIENT,
+    ),
+], callback_url='string')
+
+if res.order is not None:
+    # handle response
+    pass
+```
+---
+
+```json Example Response
+  {
+    "code": "string",
+    "details": {},
+    "message": "string"
+  }
+```
+</CH.Code>
