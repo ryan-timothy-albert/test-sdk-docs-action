@@ -2,8 +2,8 @@ configVersion: 1.0.0
 management:
   docChecksum: 8db86c8597b22945c2b3f77241037075
   docVersion: 1.0.0
-  speakeasyVersion: 1.128.0
-  generationVersion: 2.221.0
+  speakeasyVersion: 1.128.1
+  generationVersion: 2.223.0
 generation:
   comments: {}
   sdkClassName: speakeasybar
@@ -13,7 +13,7 @@ generation:
     nameResolutionDec2023: false
 features:
   docs:
-    core: 1.19.0
+    core: 1.21.0
     errors: 0.1.0
     examples: 0.1.1
     globalSecurity: 0.1.1
@@ -22,7 +22,7 @@ features:
     methodSecurity: 0.2.0
     serverIDs: 0.1.0
 docs:
-  version: 0.17.0
+  version: 0.18.0
   imports:
     option: openapi
     paths:
@@ -34,6 +34,7 @@ docs:
   inputModelSuffix: input
   outputModelSuffix: output
   packageName: speakeasy-sdk-docs
+  static: true
 go:
   version: 0.0.1
   clientServerStatusCodesAsErrors: true

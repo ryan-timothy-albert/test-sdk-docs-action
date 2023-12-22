@@ -1,0 +1,45 @@
+{/* Start Go Errors */}
+Handling errors in this SDK should largely match your expectations.  All operations return a response object or an error, they will never return both.  When specified by the OpenAPI spec document, the SDK will return the appropriate subclass.
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"errors"
+	templatesdk "github.com/speakeasy-sdks/template-sdk"
+	"github.com/speakeasy-sdks/template-sdk/models/components"
+	"github.com/speakeasy-sdks/template-sdk/models/operations"
+	"github.com/speakeasy-sdks/template-sdk/models/sdkerrors"
+	"log"
+)
+
+func main() {
+	s := templatesdk.New(
+		templatesdk.WithSecurity("<YOUR_API_KEY_HERE>"),
+	)
+
+	ctx := context.Background()
+	res, err := s.Authentication.Authenticate(ctx, operations.AuthenticateRequestBody{})
+	if err != nil {
+
+		var e *sdkerrors.APIError
+		if errors.As(err, &e) {
+			// handle error
+			log.Fatal(e.Error())
+		}
+
+		var e *sdkerrors.SDKError
+		if errors.As(err, &e) {
+			// handle error
+			log.Fatal(e.Error())
+		}
+	}
+}
+
+```
+{/* End Go Errors */}
