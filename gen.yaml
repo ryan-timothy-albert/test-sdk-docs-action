@@ -1,26 +1,10 @@
-configVersion: 1.0.0
-management:
-  docChecksum: 8db86c8597b22945c2b3f77241037075
-  docVersion: 1.0.0
-  speakeasyVersion: 1.128.1
-  generationVersion: 2.223.0
+configVersion: 2.0.0
 generation:
-  comments: {}
   sdkClassName: speakeasybar
   usageSnippets:
     optionalPropertyRendering: withExample
   fixes:
     nameResolutionDec2023: false
-features:
-  docs:
-    core: 1.21.0
-    errors: 0.1.0
-    examples: 0.1.1
-    globalSecurity: 0.1.1
-    globalServerURLs: 0.1.1
-    inputOutputModels: 0.3.0
-    methodSecurity: 0.2.0
-    serverIDs: 0.1.0
 docs:
   version: 0.18.0
   imports:
@@ -32,6 +16,7 @@ docs:
       shared: shared
       webhooks: webhooks
   inputModelSuffix: input
+  maxMethodParams: 4
   outputModelSuffix: output
   packageName: speakeasy-sdk-docs
   static: true
