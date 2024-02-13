@@ -2,7 +2,7 @@
 <CH.Code>
 ```python CreateOrder.py
 import speakeasybar
-from speakeasybar.models import callbacks, components, operations
+from speakeasybar.models import components
 
 s = speakeasybar.Speakeasybar(
     api_key="<YOUR_API_KEY_HERE>",
@@ -25,9 +25,9 @@ if res.order is not None:
 
 ```json Example Response
   {
-    "code": "string",
+    "code": "None",
     "details": {},
-    "message": "string"
+    "message": "None"
   }
 ```
 </CH.Code>

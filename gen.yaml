@@ -5,8 +5,12 @@ generation:
     optionalPropertyRendering: withExample
   fixes:
     nameResolutionDec2023: false
+    parameterOrderingFeb2024: false
+    requestResponseComponentNamesFeb2024: false
 docs:
-  version: 0.20.0
+  version: 0.21.0
+  docsLanguages:
+    - go
   imports:
     option: openapi
     paths:
