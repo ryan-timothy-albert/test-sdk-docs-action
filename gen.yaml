@@ -8,7 +8,7 @@ generation:
     parameterOrderingFeb2024: false
     requestResponseComponentNamesFeb2024: false
 docs:
-  version: 0.21.0
+  version: 0.21.1
   docsLanguages:
     - go
   imports:
