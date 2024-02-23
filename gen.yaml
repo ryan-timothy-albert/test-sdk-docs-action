@@ -8,7 +8,7 @@ generation:
     parameterOrderingFeb2024: false
     requestResponseComponentNamesFeb2024: false
 docs:
-  version: 0.21.1
+  version: 0.21.2
   docsLanguages:
     - go
   imports:
@@ -26,6 +26,7 @@ docs:
   static: true
 go:
   version: 0.0.1
+  additionalDependencies: {}
   clientServerStatusCodesAsErrors: true
   flattenGlobalSecurity: true
   imports:
@@ -60,6 +61,10 @@ python:
   packageName: speakeasybar
 typescript:
   version: 0.0.1
+  additionalDependencies:
+    dependencies: {}
+    devDependencies: {}
+    peerDependencies: {}
   author: Speakeasy
   clientServerStatusCodesAsErrors: true
   flattenGlobalSecurity: true
@@ -75,4 +80,5 @@ typescript:
   maxMethodParams: 4
   outputModelSuffix: output
   packageName: speakeasybar
+  responseFormat: envelope-http
   templateVersion: v2
