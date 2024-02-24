@@ -12,16 +12,13 @@ import (
 	"context"
 	"errors"
 	templatesdk "github.com/speakeasy-sdks/template-sdk"
-	"github.com/speakeasy-sdks/template-sdk/models/components"
 	"github.com/speakeasy-sdks/template-sdk/models/operations"
 	"github.com/speakeasy-sdks/template-sdk/models/sdkerrors"
 	"log"
 )
 
 func main() {
-	s := templatesdk.New(
-		templatesdk.WithSecurity("<YOUR_API_KEY_HERE>"),
-	)
+	s := templatesdk.New()
 
 	ctx := context.Background()
 	res, err := s.Authentication.Authenticate(ctx, operations.AuthenticateRequestBody{})

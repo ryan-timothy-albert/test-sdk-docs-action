@@ -4,19 +4,18 @@ management:
   docChecksum: 8db86c8597b22945c2b3f77241037075
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.269.0
-  releaseVersion: 0.21.2
-  configChecksum: 3978fcf98acc5ef98608a23118521a19
+  generationVersion: 2.272.4
+  releaseVersion: 0.22.0
+  configChecksum: d11e621aa331e61d2905781f86c06cbb
 features:
   docs:
-    core: 1.26.2
+    core: 1.26.3
     errors: 0.1.0
     examples: 0.1.1
     flattening: 0.1.0
-    globalSecurity: 0.1.1
+    globalSecurity: 0.1.2
     globalServerURLs: 0.1.1
     inputOutputModels: 0.3.0
-    methodSecurity: 0.2.0
     serverIDs: 0.1.0
 generatedFiles:
   - content/pages/01-reference/go/client_sdks/_snippet.mdx
