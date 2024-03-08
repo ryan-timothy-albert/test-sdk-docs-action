@@ -10,7 +10,7 @@ generation:
   auth:
     oAuth2ClientCredentialsEnabled: false
 docs:
-  version: 0.23.0
+  version: 0.23.1
   docsLanguages:
     - go
   imports:
@@ -43,6 +43,7 @@ go:
   maxMethodParams: 4
   outputModelSuffix: output
   packageName: github.com/speakeasy-sdks/template-sdk
+  responseFormat: envelope-http
 python:
   version: 0.0.1
   additionalDependencies:
@@ -65,6 +66,7 @@ python:
   maxMethodParams: 4
   outputModelSuffix: output
   packageName: speakeasybar
+  responseFormat: envelope-http
 typescript:
   version: 0.0.1
   additionalDependencies:
