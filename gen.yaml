@@ -10,7 +10,7 @@ generation:
   auth:
     oAuth2ClientCredentialsEnabled: false
 docs:
-  version: 0.23.3
+  version: 0.23.4
   docsLanguages:
     - go
   imports:
@@ -76,6 +76,7 @@ typescript:
     peerDependencies: {}
   author: Speakeasy
   clientServerStatusCodesAsErrors: true
+  enumFormat: enum
   flattenGlobalSecurity: true
   imports:
     option: openapi
