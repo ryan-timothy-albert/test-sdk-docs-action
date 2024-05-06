@@ -10,12 +10,12 @@ You can override the default server globally by passing a server name to the `se
 ```typescript
 import { Speakeasybar } from "speakeasybar";
 
-async function run() {
-    const sdk = new Speakeasybar({
-        server: "customer",
-    });
+const speakeasybar = new Speakeasybar({
+    server: "customer",
+});
 
-    const result = await sdk.authentication.authenticate({});
+async function run() {
+    const result = await speakeasybar.authentication.authenticate({});
 
     // Handle the result
     console.log(result);
@@ -38,12 +38,12 @@ The default server can also be overridden globally by passing a URL to the `serv
 ```typescript
 import { Speakeasybar } from "speakeasybar";
 
-async function run() {
-    const sdk = new Speakeasybar({
-        serverURL: "https://speakeasy.bar",
-    });
+const speakeasybar = new Speakeasybar({
+    serverURL: "https://speakeasy.bar",
+});
 
-    const result = await sdk.authentication.authenticate({});
+async function run() {
+    const result = await speakeasybar.authentication.authenticate({});
 
     // Handle the result
     console.log(result);
