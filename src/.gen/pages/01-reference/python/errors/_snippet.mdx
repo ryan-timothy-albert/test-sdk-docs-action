@@ -11,11 +11,9 @@ from speakeasybar.models import errors, operations
 
 s = speakeasybar.Speakeasybar()
 
-req = operations.AuthenticateRequestBody()
-
 res = None
 try:
-    res = s.authentication.authenticate(req)
+    res = s.authentication.authenticate(request=operations.AuthenticateRequestBody())
 except errors.APIError as e:
     # handle exception
     raise(e)
