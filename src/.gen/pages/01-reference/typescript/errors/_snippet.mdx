@@ -10,12 +10,12 @@ Validation errors can also occur when either method arguments or data returned f
 import { Speakeasybar } from "speakeasybar";
 import * as errors from "speakeasybar/models/errors";
 
-async function run() {
-    const sdk = new Speakeasybar();
+const speakeasybar = new Speakeasybar();
 
+async function run() {
     let result;
     try {
-        result = await sdk.authentication.authenticate({});
+        result = await speakeasybar.authentication.authenticate({});
     } catch (err) {
         switch (true) {
             case err instanceof errors.SDKValidationError: {
