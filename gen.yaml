@@ -10,7 +10,7 @@ generation:
   auth:
     oAuth2ClientCredentialsEnabled: false
 docs:
-  version: 0.23.4
+  version: 0.23.5
   docsLanguages:
     - go
   imports:
@@ -29,6 +29,7 @@ docs:
 go:
   version: 0.0.1
   additionalDependencies: {}
+  allowUnknownFieldsInWeakUnions: false
   clientServerStatusCodesAsErrors: true
   flattenGlobalSecurity: true
   imports:
@@ -41,6 +42,7 @@ go:
       webhooks: models/webhooks
   inputModelSuffix: input
   maxMethodParams: 4
+  methodArguments: require-security-and-request
   outputModelSuffix: output
   packageName: github.com/speakeasy-sdks/template-sdk
   responseFormat: envelope-http
@@ -64,6 +66,7 @@ python:
       webhooks: models/webhooks
   inputModelSuffix: input
   maxMethodParams: 4
+  methodArguments: require-security-and-request
   outputModelSuffix: output
   packageName: speakeasybar
   projectUrls: {}
@@ -74,6 +77,7 @@ typescript:
     dependencies: {}
     devDependencies: {}
     peerDependencies: {}
+  additionalPackageJSON: {}
   author: Speakeasy
   clientServerStatusCodesAsErrors: true
   enumFormat: enum
@@ -88,6 +92,7 @@ typescript:
       webhooks: models/webhooks
   inputModelSuffix: input
   maxMethodParams: 4
+  methodArguments: require-security-and-request
   outputModelSuffix: output
   packageName: speakeasybar
   responseFormat: envelope-http
